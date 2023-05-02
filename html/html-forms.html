@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Forms</title>
+</head>
+<body>
+	<h2>HTML FORMS</h2>
+	<form action="register" method="post">
+		<div>
+			<label>Full Name</label>
+			<input type="text" name="fullname" placeholder="Full Name">	
+		</div>
+
+		<div>
+			<label>Mobile Number</label>
+			<input type="tel" name="mobileno">	
+		</div>
+
+		<div>
+			<label>Email</label>
+			<input type="email" name="email">	
+		</div>
+
+		<div>
+			<label>Password</label>
+			<input type="password" name="password">	
+		</div>
+
+		<div>
+			<label>Age</label>
+			<input type="number" name="age">	
+		</div>
+
+		<div>
+			<label>Gender</label><br>
+
+			<label>
+				Male<input type="radio" id="male" name="gender" value="male">
+			</label>
+			
+
+			<label for="female">
+				Female
+			</label>
+			<input type="radio" id="female" name="gender" value="female">	
+		</div>
+
+		<div>
+			<label>Date Of Birth</label>
+			<input type="date" name="dob">
+		</div>
+
+		<div>
+			<label>Time</label>
+			<input type="time" name="time">
+		</div>
+
+		<div>
+			<label>Favorite Color</label>
+			<input type="color" name="color">
+		</div>
+
+		<div>
+			<label>File</label>
+			<input type="file" name="image" accept=".jpg,.pdf">
+		</div>
+
+		<div>
+			<label>Select City</label>
+			<select name="city" multiple>
+				<option value="1">Solapur</option>
+				<option value="2">Mumbai</option>
+				<option value="3">Pune</option>
+				<option value="4"selected>Bengaluru</option>
+				<option value="5">Hyderabad</option>
+				<option value="6">Delhi</option>
+			</select>
+		</div>
+		<div>
+			<input type="submit" name="submit">
+		</div>
+	</form>
+	
+</body>
+</html>

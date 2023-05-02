@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Tables</title>
+	<style>
+		table,th,td{
+			border: 1px solid black;
+			border-collapse: collapse;
+			padding: 8px;
+		}
+	</style>
+</head>
+<body>
+	<h2>HTML TABLES</h2>
+	<table>
+		<thead>
+			<tr>
+				<th colspan="5">Students Table</th>
+			</tr>
+			<tr>
+				<th>Roll No</th>
+				<th>Name</th>
+				<th>Marks</th>
+				<th>City</th>
+				<th>Photo</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>101</td>
+				<td>Alex</td>
+				<td>87</td>
+				<td>Mumbai</td>
+				<td>
+					<img src="img/man.jpg" width="100px" height="100px">
+				</td>
+			</tr>
+
+			<tr>
+				<td>102</td>
+				<td>John</td>
+				<td>82</td>
+				<td>Pune</td>
+				<td>
+					<img src="img/man.jpg" width="100px" height="100px">
+				</td>
+			</tr>
+
+			<tr>
+				<td>103</td>
+				<td>Peter</td>
+				<td>88</td>
+				<td>Bengaluru</td>
+				<td>
+					<img src="img/man.jpg" width="100px" height="100px">
+				</td>
+			</tr>
+
+			<tr>
+				<td>104</td>
+				<td>Leo</td>
+				<td>96</td>
+				<td rowspan="2">Solapur</td>
+				<td>
+					<img src="img/man.jpg" width="100px" height="100px">
+				</td>
+			</tr>
+			<tr>
+				<td>105</td>
+				<td>Roger</td>
+				<td>96</td>
+				<td>
+					<img src="img/man.jpg" width="100px" height="100px">
+				</td>
+			</tr>
+
+			<tr>
+				<td>106</td>
+				<td>Ben</td>
+				<td>96</td>
+				<td rowspan="2">Pune</td>
+				<td>
+					<img src="img/man.jpg" width="100px" height="100px">
+				</td>
+			</tr>
+			<tr>
+				<td>107</td>
+				<td>Stuart</td>
+				<td>96</td>
+				<td>
+					<a href="amazon.com">
+						<img src="img/iphone.jpg" width="100%" height="auto">
+					</a>
+					
+				</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<th colspan="5">Total 7 Rows</th>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>
