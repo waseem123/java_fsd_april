@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Pseudo Elements</title>
+	<style type="text/css">
+		p::first-letter{
+			font-size:48px;
+			color: red;
+		}
+
+		p::first-line{
+			font-size: 24px;
+			font-family: cursive;
+			font-variant-caps: small-caps;
+		}
+
+		p::before{
+			content: url("../img/spotify.png");
+			
+		}
+		p::after{
+			content: url("../img/spotify.png");
+			
+		}
+
+		::marker{
+			color: green;
+		}
+
+		::selection{
+			background: red;
+			color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<h2>CSS Pseudo Elements</h2>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	<hr>
+	<p>
+		Syntax for applying Pseudo Elements - 
+	</p>
+	<code>
+		selector::pseudo-element{<br>
+			property:value;<br>
+		}
+	</code>
+	<hr>
+	<p>
+		Paragraph 2 just for sample
+	</p>
+	<hr>
+	<ul>
+		<li>Pen</li>
+		<li>Pencil</li>
+		<li>Eraser</li>
+		<li>Sharpner</li>
+		<li>Scale</li>
+		<li>School Bag</li>
+	</ul>
+</body>
+</html>
