@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Flexbox demo</title>
+
+	<style type="text/css">
+		.flex-container{
+			display: flex;
+			/*flex-wrap: wrap;
+			flex-direction: row;*/
+			  flex-flow: row wrap;
+			background-color: brown;
+		}
+
+		.flex-container>div{
+			font-size: 48px;
+			margin: 20px;
+			padding: 20px;
+			background-color: lightblue;
+		}
+	</style>
+</head>
+<body>
+	<div class="flex-container">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+
+		<div>11</div>
+		<div>22</div>
+		<div>33</div>
+
+		<div>10</div>
+		<div>20</div>
+		<div>30</div>
+	</div>
+</body>
+</html>
