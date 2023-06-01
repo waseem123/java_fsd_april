@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS Demo</title>
+</head>
+<body>
+	<h1 id="heading1">JS TUTORIAL</h1>
+	<p id="p1">
+		Welcome to JS OPERATIONS
+	</p>
+	<input type="text" name="data" id="data">
+	<button onclick="changeContent()">CLICK ME</button>
+</body>
+<script type="text/javascript">
+	function changeContent(){
+		document.getElementById("p1").innerHTML = document.getElementById("data").value;
+		console.log(document.getElementById("data").value)
+	}
+	alert("Welcome")
+</script>
+</html>

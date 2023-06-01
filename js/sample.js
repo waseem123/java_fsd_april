@@ -1,0 +1,1 @@
+console.log("This statement is loaded from External JS")
