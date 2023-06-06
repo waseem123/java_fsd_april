@@ -10,10 +10,11 @@
 		<li>Arithmetic(+,-,*,/,%)</li>
 		<li>Assignment(=,+=,-=,*=,/=,%=)</li>
 		<li>Unary(++,--)</li>
-		<li>Relational / Conditional</li>
-		<li>Logical</li>
-		<li>Bitwise</li>
-		<li>Shift</li>
+		<li>Relational / Conditional / comparison(>, >=, <, <=, ==, !=, ===)</li>
+		<li>Logical(&&,||,!)</li>
+
+		<li>Bitwise(&, |)</li>
+		<li>Shift (<<, >>)</li>
 		<li>Ternery</li>
 	</ol>
 </body>
@@ -22,33 +23,79 @@
 	var x = 100
 	var y = 50
 
-	console.log(x+y)
-	console.log(x-y)
-	console.log(x*y)
-	console.log(x/y)
-	console.log(x%y)
+	console.log(x+y) //150
+	console.log(x-y) //50
+	console.log(x*y) //5000
+	console.log(x/y) //2
+	console.log(x%y) //0
 </script>
 
 <script type="text/javascript">
 	x = 200
 	console.log(x)
 
-	x += 5 // x = x + 5
+	x += 5 // x = x + 5 ----> x = 200+5 ----> 205
 	console.log(x)
 
-	x-=5
+	x -= 5 // x = x - 5 ----> x = 205-5 ----> 200
 	console.log(x)
 
-	x *=5
+	x *= 5 // x = x * 5 ----> x = 200*5 ----> 1000
 	console.log(x)
 </script>
 
 <script type="text/javascript">
-	var x = 10
-	console.log(++x)
-	console.log(x)
+	// pre  --> First operate then assign
+	// post --> First assign then operate
 
-	console.log(x--)
-	console.log(--x)
+	var x = 10
+	console.log(++x) //11
+	console.log(x)   //11
+	console.log(x++) //11
+	console.log(x)   //12
+
+	console.log(x--) //12
+	console.log(x)   //11
+	console.log(--x) //10
+
+</script>
+
+<script type="text/javascript">
+	var x = "100"
+	var y = "100"
+	// console.log(x > y)
+	// console.log(x < y)
+	// console.log(x >= y)
+	// console.log(x <= y)
+	// console.log(x == y)
+	// console.log(x != y)
+	console.log(x == y)
+	console.log(x===y)
+</script>
+
+<script type="text/javascript">
+	var x = 100
+	var y = 200
+	var z = 100
+
+	console.log(x<y && x==z)
+	console.log(x<y || x==z)
+
+	console.log(!(x==z))
+</script>
+
+<script type="text/javascript">
+	var x = 5
+	var y = 3
+	console.log(x&y)
+	console.log(x|y)
+</script>
+
+<script type="text/javascript">
+	var x = 1
+	var y = 2
+
+	console.log(x<<y)
+	console.log(x>>y)
 </script>
 </html>
