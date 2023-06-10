@@ -6,6 +6,7 @@
 	<title>JS - Decision Making</title>
 </head>
 <body>
+	<h1>DECISION MAKING / CONTROL FLOW STATEMENTS</h1>
 	<h2>Conditional Statements</h2>
 	<ol>
 		<li>IF statements</li>
@@ -26,24 +27,61 @@
 	// }
 </script>
 <script type="text/javascript">
-	var num = 30
-	if(num%2==0){
-		alert("NUMBER IS ODD")
-	}else{
-		alert("NUMBER IS EVENz")
-	}
+	// var num = 30
+	// if(num%2==0){
+	// 	alert("NUMBER IS EVEN")
+	// }else{
+	// 	alert("NUMBER IS ODD")
+	// }
 </script>
 <script type="text/javascript">
-	var x = 200
-	var y = 30
-	var z = 25
+	// var x = 250
+	// var y = 30
+	// var z = 250
 
-	if(x>y && x>z){
-		alert(x+" IS GREATER NUMBER")
-	}else if(y>x && y>z){
-		alert(y+" IS GREATER NUMBER")
-	}else if(z>x && z>y){
-		alert(z+" IS GREATER NUMBER")
+	// if(x>y && x>z){
+	// 	alert(x+" IS GREATER NUMBER")
+	// }else if(y>x && y>z){
+	// 	alert(y+" IS GREATER NUMBER")
+	// }else if(z>x && z>y){
+	// 	alert(z+" IS GREATER NUMBER")
+	// }else{
+	// 	alert("EITHER OF THE GIVEN NUMBERS IS EQUAL TO ANOTHER")
+	// }
+</script>
+
+<script type="text/javascript">
+	var age = 9
+	if(age>=18){
+		var votingcard = false
+		if(votingcard==true){
+			console.log("YOU CAN VOTE")
+		}else{
+			console.log("YOU CAN NOT VOTE AS YOU DON'T HAVE VOTER ID")
+		}
+	}else{
+		console.log("GO HOME. AND SLEEP TIGHT UNTIL YOU ARE 18.")
+	}
+</script>
+
+<script type="text/javascript">
+	var x = 10
+	var y = 5
+	console.log("1.ADD\n2.SUBTRACT\n3.MULTIPLY")
+	var choice = 1
+	switch(choice){
+		case 1:
+			console.log("ADDITION - "+(x+y))
+			break;
+		case 2:
+			console.log("SUBTRACTION - "+(x-y))
+			break;
+		case 3:
+			console.log("MULTIPLICATION - "+(x*y))
+			break;
+		default:
+			console.log("WRONG CHOICE INPUT. PLEASE CHOOSE OPTION BETWEEN 1 AND 3")
+
 	}
 </script>
 

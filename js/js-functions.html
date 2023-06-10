@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS Functions</title>
+</head>
+<body>
+	There are 4 types of functions - 
+	<ol>
+		<li>Function with No Parameter No Return Value</li>
+		<li>Function with Parameter No Return Value</li>
+		<li>Function with No Parameter but Return Value</li>
+		<li>Function with Parameter AND Return Value</li>
+	</ol>
+</body>
+<script type="text/javascript">
+	function add(x,y){
+		return x+y
+	}
+
+	var result = add(1025,204)
+	console.log(result)
+
+	console.log(add(1111,222))
+
+	console.log(add(10,add(20,40)))
+	console.log(add(add(20,40),add(20,40)))
+</script>
+
+<script type="text/javascript">
+	function showData(x) {
+		if(x!=10){
+			console.log(x)
+			showData(x+1)
+		}
+	}
+
+	showData(1)
+</script>
+
+<!-- 
+	Factorial with recusrsion
+	5! = 5 * 4!
+	4! = 4 * 3!
+	3! = 3 * 2!
+	2! = 2 * 1!
+	1! = 1
+
+	N! = N * (N-1)!
+-->
+<script type="text/javascript">
+	function factorial(N){
+		if(N==1){
+			return 1;
+		}else{
+			return N * factorial(N-1)
+		}
+	}
+
+	console.log(factorial(5))
+</script>
+</html>
