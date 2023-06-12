@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS - Arrays</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var myarr = [100,200,300,400,500,700,800,900,1000]
+	console.log(myarr)
+	console.log(myarr.length)
+	console.log(myarr[0])
+	console.log(myarr[2])
+	console.log(myarr[1])
+	console.log(myarr[3])
+	console.log(myarr[80])
+
+	for (var i = 0; i<myarr.length; i++) {
+		console.log(myarr[i])
+	}
+	
+	for (var i = myarr.length-1; i>=0; i--) {
+		console.log(myarr[i])
+	}
+
+	for(var i in myarr){
+		console.log(myarr[i])
+	}
+</script>
+
+<script type="text/javascript">
+	var students = ["Sheetal","Revan","Shardul","Priyanka","Nandini","Aditi","Jidnya"]
+	console.log(students)
+
+	for(var i in students){
+		console.log(students[i])
+	}
+	for(var i in students){
+		console.log(students[i][0])
+	}
+
+	for(var i in students){ 
+		for(var j in students[i]){
+			console.log(students[i][j])
+		}
+		console.log("________")
+	}
+
+</script>
+</html>
+<!-- 
+0->Sheetal,
+1->Revan,
+2->Shardul,
+3->Priyanka,
+4->Nandini,
+5->Aditi,
+6->Jidnya
+
+0->Sheetal
+0=>S
+1=>h
+2=>e
+3=>e
+4=>t
+5=>a
+6=>l
+
+1->Revan
+0=>R
+1=>e
+2=>v
+3=>a
+4=>n
+
+ -->
