@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Array Methods</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var myarray = ["Sheetal","Revan","Shardul","Priyanka","Nandini","Aditi","Jidnya"]
+	console.log(myarray)
+
+	/*push() method adds a new element in the end of the array*/
+	myarray.push("Anjali","Waseem","Shubham")
+	console.log(myarray)
+
+
+
+	/*pop() method removes an element from the end of the array*/
+	myarray.pop()
+	console.log(myarray)
+
+	/*shift() method removes an element from the start of the array*/
+	myarray.shift()
+	console.log(myarray)
+
+	/*unshift() mehtod adds a new element in the start of the array*/
+	myarray.unshift("Alex","Sheetal")
+	console.log(myarray)
+
+	console.log(myarray[9])
+	myarray[9] = "Attar"
+	console.log(myarray[9])
+
+	delete myarray[3]
+	console.log(myarray)
+</script>
+
+<script type="text/javascript">
+	var arr = ["Sheetal","Revan","Shardul","Priyanka","Nandini","Aditi","Jidnya"]
+	console.log(arr)
+	var x = arr.slice(4,7)
+	console.log(x)
+	console.log(arr)
+
+	// splice operation
+	/*1st parameter - index on which you want to put elemnt
+	2nd parameter - no of elements you want to remove
+	3rd parameter - elements*/
+	arr.splice(3,2,"Waseem")
+	console.log(arr)
+</script>
+
+</html>
