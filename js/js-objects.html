@@ -6,17 +6,28 @@
 	<title></title>
 </head>
 <body>
-
+	JSON - Javascript Object Notation
+	JS - Javascript
+	O  - Object
+	N  - Notation
 </body>
 <script type="text/javascript">
 	var person = {
 		"name":"Waseem",
 		"city":"Solapur",
-		"mobile":"9096288255",
+		"mobile":["9096288255",6354789451],
 		"experience":7
 	}
 	console.log(person)
 	console.log(person['name'])
 	console.log(person.city)
+	console.log(person.mobile)
+
+	for (var i in person) {
+		console.log(i)
+		console.log(person[i])
+		console.log(i+"=>"+person[i])
+	}
+
 </script>
 </html>

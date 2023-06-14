@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Find Element</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var arr = [100,200,300,400,500,300,200,400,100,600,100,100,200]
+	var num = 200;
+	var flag = false;
+	var index = -1;
+	var occurances = 0;
+	var indexes = []
+	for (var i = 0; i < arr.length; i++) {
+		if(arr[i]==num){
+			flag = true;
+			index = i
+			occurances++;
+			indexes.push(i)
+		}
+	}
+	if(flag==true){
+		console.log("Number is present")
+		// console.log("INDEX : "+index)
+		console.log("OCCURANCES : "+occurances)
+		console.log(indexes)
+	}else{
+		console.log("Number is absent")
+	}
+</script>
+</html>
