@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS Object Methods</title>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+	var person1 = {
+		name:"Waseem",
+		city:"Solapur",
+		info:function(){
+			return this.name+" "+this.city
+		}
+	}
+	console.log(person1)
+	console.log(person1.name)
+	console.log(person1.city)
+	console.log(person1.info())
+	person1.mobileno = "9096288255";
+	console.log(person1)
+
+	person1.displayName = function(){
+		return this.name;
+	}
+	console.log(person1)
+</script>
+
+<script type="text/javascript">
+	var students = [
+		{
+			rollno:101,
+			name:"Shardul",
+			info:function(){
+				return this.rollno + " " +this.name 
+			}
+		},
+	
+		{
+			rollno:102,
+			name:"Revan",
+			info:function(){
+				return this.rollno + " " +this.name 
+			}
+		},
+
+		{
+			rollno:103,
+			name:"Priyanka",
+			info:function(){
+				return this.rollno + " " +this.name 
+			}
+		},
+
+		{
+			rollno:104,
+			name:"Nandini",
+			info:function(){
+				return this.rollno + " " +this.name 
+			}
+		}
+	];
+
+	var student  = {
+		rollno:105,
+		name:"Sheetal",
+		info:function(){
+			return this.rollno + " " +this.name 
+		}
+	}
+	students.push(student)
+
+	for (var i = 0; i < students.length; i++) {
+		console.log(students[i].info())
+	}
+
+	var x = JSON.stringify(students)
+	console.log(x)
+
+	for (var i = 0; i < x.length; i++) {
+		console.log(x[i])
+	}
+
+	var y = JSON.parse(x);
+	console.log(y)
+
+</script>
+</html>
