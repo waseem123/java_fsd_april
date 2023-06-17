@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM - Inner Access</title>
+</head>
+<body>
+	<h2 id="heading">List of Electronic Devices</h2>
+	<ul id="electronic_list">
+		<li>Mobile</li>
+		<li>Laptop</li>
+		<li>Smart Watch</li>
+		<li>Bluetooth Eardopes</li>
+		<li>Charger</li>
+		<li>POWER Bank</li>
+	</ul>
+	<img id="iphone_image" src="../img/iphone.jpg" style="width:50%">
+</body>
+<script type="text/javascript">
+	var heading = document.getElementById("heading");
+	var list = document.getElementById("electronic_list");
+	console.log(heading)
+	console.log(list)
+
+	console.log(heading.innerHTML)
+	console.log(heading.innerText)
+
+	console.log(list.innerHTML)
+	console.log(list.innerText)
+
+	console.log(document.getElementById("iphone_image").innerText)
+</script>
+</html>
