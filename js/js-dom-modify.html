@@ -16,15 +16,31 @@
 		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 	</p>
 	<p id="p2"></p>
+
+	<ul id="countries">
+		<li>India</li>
+		<li>China</li>
+		<li>Russia</li>
+		<li>Japan</li>
+		<li>South Korea</li>
+	</ul>
 </body>
 <script type="text/javascript">
 	var paragraph = document.getElementById("p1");
 	paragraph.innerHTML = "WELCOME TO DOM MANIPULATION";
 
 	var paragraph2 = document.getElementById("p2")
+	paragraph2.innerHTML = 10+"50000";
 
-	// paragraph2.innerHTML = 10+"50000";
 
+</script>
+
+<script type="text/javascript">
+	var countries = document.getElementById("countries");
+	var countrylist = countries.innerHTML;
+	console.log(countrylist)
+	countrylist = countrylist + "<li>Saudi Arabia</li>";
+	countries.innerHTML = countrylist;
 </script>
 
 </html>
