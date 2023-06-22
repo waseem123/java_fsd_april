@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS EVENTS</title>
+</head>
+<body>
+	<input type="text" id="firstname" name="firstname">
+	<input type="text" id="lastname" name="lastname">
+	<button onclick="showInfo()">OK</button>
+
+	<p id="ptext">My name is - </p>
+
+</body>
+<script type="text/javascript">
+	function showInfo() {
+		var firstname_input = document.getElementById("firstname")
+		var lastname_input = document.getElementById("lastname")
+
+		var firstname = firstname_input.value;
+		var lastname = lastname_input.value;
+
+		console.log(firstname+" "+lastname)
+
+		var fullname = firstname+" "+lastname;
+
+		var ptext = document.getElementById("ptext")
+		ptext.innerHTML = "";
+		var data = "My name is"
+		data = data + " " + fullname;
+		ptext.innerHTML = data;
+	}
+</script>
+</html>
