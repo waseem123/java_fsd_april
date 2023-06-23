@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM - CSS</title>
+</head>
+<body>
+	<h2>DOM CSS</h2>
+	<p id="p1">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+
+	<p>
+		<b>Syntax to add CSS using JS</b>
+		<code>
+			ELEMENT.style.STYLE_PROPERTY = VALUE
+		</code>
+	</p>
+	<button id="b1">Add CSS</button>
+</body>
+<script type="text/javascript">
+	var b1 = document.getElementById("b1");
+	b1.addEventListener("click",function(){
+		b1.style.color = "red";
+		b1.style.background = "black";
+		b1.style.border = "none";
+		b1.style.padding = "8px";
+		b1.style.margin = "8px";
+
+	})
+</script>
+
+<script type="text/javascript">
+	var p1 = document.getElementById("p1");
+	p1.addEventListener("mouseover",function(){
+		p1.style.color = "white";
+		p1.style.background = "#9a2b3c";
+		p1.style.border = "none";
+		p1.style.padding = "8px";
+		p1.style.margin = "8px";
+
+	})
+</script>
+</html>

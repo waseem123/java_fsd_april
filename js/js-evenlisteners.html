@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS - Event Listeners</title>
+	<style type="text/css">
+		p{
+			background-color: #32429b;
+			color: white;
+			padding: 24px;
+			font-family: calibri;
+			font-size: 24px;
+			border-radius: 8px;
+		}
+		button{
+			color: white;
+			padding: 24px;
+			font-family: calibri;
+			font-size: 18px;
+			border: none;
+			border-radius: 8px;
+		}
+
+		#b1{
+			background-color: #32429b;
+		}
+
+		#b2{
+			background-color: #329b42;
+		}
+
+		#b3{
+			background-color: #9b3242;
+		}
+	</style>
+</head>
+<body>
+	<h2 id="heading">JS EVENT LISTENERS</h2>
+	<p id="p1">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+
+	<button id="b1">BUTTON 1</button>
+	<button id="b2">BUTTON 2</button>
+	<button id="b3">BUTTON 3</button>
+
+	<p>
+		Syntax - <br>
+		<code>
+			HTML_ELEMENT.addEventListener(EVENT_NAME,function_to_execute_on_event);
+		</code>
+	</p>
+</body>
+
+<script type="text/javascript">
+	var button1 = document.getElementById("b1");
+	button1.addEventListener("click",function(){
+		alert("Welcome to Event Listener Tutorial")
+	});
+</script>
+
+<script type="text/javascript">
+	var button2 = document.getElementById("b2");
+	button2.addEventListener("dblclick",function(){
+		alert("Double Clicked on the button 2")
+	});
+</script>
+
+<script type="text/javascript">
+	var button3 = document.getElementById("b3");
+
+	button3.addEventListener("mousedown",function(){
+		button3.innerHTML = "Click and Hold state"
+	});
+
+	button3.addEventListener("mouseup",function(){
+		button3.innerHTML = "Released"
+	});
+</script>
+
+<script type="text/javascript">
+	var p1 = document.getElementById("p1");
+	p1.addEventListener("mouseover",function(){
+		alert("Welcome")
+	});
+	p1.addEventListener("mouseout",function(){
+		alert("Goodbye")
+	});
+</script>
+</html>
