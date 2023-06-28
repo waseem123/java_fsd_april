@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS NODE MANIPULATION</title>
+</head>
+<body>
+	<div>
+		<ol>
+			<li>To ADD new Element
+				<ul>
+					<li><b>appendChild() - </b> To add the elment in the end</li>
+					<li><b>insertBefore() - </b> To add the element before any given element</li>
+				</ul>
+			</li>
+			<li>To REMOVE existing Element
+				<ul>
+					<li>
+						<b>remove() - </b> To remove the node
+					</li>
+					<li>
+						<b>removeChild() - </b> To remove the child node
+					</li>
+				</ul>
+			</li>
+			<li>To Replace the Element
+				<ul>
+					<li>
+						<b>replaceChilde() - </b> To replace any child element with another child element.
+					</li>
+				</ul>
+			</li>
+		</ol>
+	</div>
+<hr>
+	<div id="d1">
+		<p id="p1">
+			THIS IS PARAGRAPH 1.
+		</p>
+
+		<p id="p2">
+			THIS IS PARAGRAPH 2.
+		</p>
+
+	</div>
+</body>
+
+<script type="text/javascript">
+	const p3 = document.createElement("p");
+	const data=document.createTextNode("THIS IS PARAGRAPH 3");
+	p3.appendChild(data);
+
+	/*
+		Above 3 lines of code will produce following HTML
+		<p>THIS IS PARAGRAPH 3</p>
+	*/
+	const div = document.getElementById("d1");
+	div.appendChild(p3);
+</script>
+
+<script type="text/javascript">
+	const p4 = document.createElement("p");
+	const data1=document.createTextNode("THIS IS PARAGRAPH 4");
+	p4.appendChild(data1);
+
+	const div1 = document.getElementById("d1");
+	const p2 = document.getElementById("p2");
+	div1.insertBefore(p4,p2)
+</script>
+
+<script type="text/javascript">
+	const p1 = document.getElementById("p1");
+	p1.remove()
+</script>
+
+<script type="text/javascript">
+	// const d = document.getElementById('d1')
+	// d.removeChild(p2)
+</script>
+
+<script type="text/javascript">
+	const p5 = document.createElement("p");
+	const text=document.createTextNode("THIS IS PARAGRAPH 5");
+	p5.appendChild(text);
+
+	const parent = document.getElementById('d1')
+	parent.replaceChild(p5,p2)
+</script>
+</html>
