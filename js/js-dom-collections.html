@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DOM Collection</title>
+</head>
+<body>
+	<div>
+		<h1>Heading 1</h1>
+		<p>
+			This is paragraph 1
+		</p>
+	</div>
+
+
+	<div>
+		<h1>Heading 2</h1>
+		<p>
+			This is paragraph 2
+		</p>
+	</div>
+
+
+	<div>
+		<h1>Heading 3</h1>
+		<p>
+			This is paragraph 3
+		</p>
+	</div>
+
+
+	<div>
+		<h1>Heading 4</h1>
+		<p>
+			This is paragraph 4
+		</p>
+	</div>
+</body>
+<script type="text/javascript">
+	var headings = document.getElementsByTagName("h1");
+	console.log(headings)
+
+
+	var paragraphs = document.getElementsByTagName("p");
+	console.log(paragraphs)
+
+	console.log(headings[1])
+	console.log(headings[1].innerHTML)
+
+	paragraphs[2].innerHTML = "I am Paragraph 3"
+
+	for (var i = 0; i < paragraphs.length; i++) {
+		console.log(paragraphs[i].innerHTML)
+	}
+
+	var p = "<p>WELCOME</p>"
+
+</script>
+</html>
