@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS - NodeList</title>
+</head>
+<body>
+	<div>
+		<h1>Heading 1</h1>
+		<p>
+			This is paragraph 1
+		</p>
+	</div>
+	<div>
+		<h1>Heading 2</h1>
+		<p>
+			This is paragraph 2
+		</p>
+	</div>
+	<div>
+		<h1>Heading 3</h1>
+		<p>
+			This is paragraph 3
+		</p>
+	</div>
+	<div>
+		<h1>Heading 4</h1>
+		<p>
+			This is paragraph 4
+		</p>
+	</div>
+</body>
+<script type="text/javascript">
+	var paragraphs = document.querySelectorAll("p")
+	console.log(paragraphs)
+
+	console.log(paragraphs[0].childNodes[0])
+
+	var divs = document.querySelectorAll("div")
+	console.log(divs)
+
+	const myparagraph = document.createElement("p");
+	const node = document.createTextNode("Life is beautiful.");
+	myparagraph.appendChild(node)
+	divs[1].appendChild(myparagraph)
+</script>
+</html>
