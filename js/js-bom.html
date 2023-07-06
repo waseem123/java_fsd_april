@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS BOM</title>
+</head>
+<body>
+	<button id="btn_google">Google</button>
+	<button id="btn_amazon">Amazon</button>
+	<button id="btn_flipkart">Flipkart</button>
+
+	<hr>
+
+	<div>
+		<button id="btn_back">PREVIOUS <<</button>
+		<button id="btn_next">NEXT >></button>
+
+	</div>
+	<hr>
+
+	<button onclick="deleteData()">Delete</button>
+
+	<button onclick="setTimeout(showAlert,2000)">TimeOut</button>
+	<button onclick="setInterval(showAlert,2000)">Interval</button>
+</body>
+<script type="text/javascript">
+	console.log(screen.width)
+	console.log(screen.height)
+	console.log(screen.availWidth)
+	console.log(screen.availHeight)
+	console.log(screen.colorDepth)
+	console.log(location.hostname)
+	console.log(location.pathname)
+
+	var btn_google = document.getElementById('btn_google');
+
+	var btn_amazon = document.getElementById('btn_amazon');
+
+	var btn_flipkart = document.getElementById('btn_flipkart');
+
+	btn_google.addEventListener("click",function(){
+		location.href="https://www.google.com"
+	});
+
+	btn_amazon.addEventListener("click",function(){
+		location.href="https://www.amazon.com"
+	});
+
+	btn_flipkart.addEventListener("click",function(){
+		location.href="https://www.flipkart.com"
+	});
+</script>
+
+<script type="text/javascript">
+	btn_back.addEventListener("click",function(){
+		history.back()
+	});
+
+	btn_next.addEventListener("click",function(){
+		history.forward()
+	});
+</script>
+
+<script type="text/javascript">
+	function deleteData(){
+		var choice = confirm("Are you sure? Do you want to delete the data?")
+		if(choice==true){
+			alert("Deleted succesfully")
+		}else{
+			alert("Operation Cancelled by user")
+		}
+
+	}
+	// prompt("Welcome","Welcome to JS")
+</script>
+
+<script type="text/javascript">
+	function showAlert(){
+		alert("Welcome to InfoStack")
+	}
+</script>
+</html>
